@@ -45,20 +45,18 @@ body{
 .logo{
    position: absolute;
    width: 4rem;     
-   padding-top: 1rem;
+   padding-top: 0.4rem;
 }
-
-
 
 .donate{
  background-color: $yellow;
- color: $grey; 
- font-size: 1.2rem;    
- width: 6rem;    
- position: absolute;
- padding: 2.2rem 0 2.3rem 1rem;   
+ color: $grey;   
+ position: absolute;  
  right: 0;
- margin: 0;    
+ margin: 0; 
+ font-size: 1.4rem;
+ width: 7rem;    
+ padding: 1.6rem 0 1.7rem 1rem; 
 }
 
 i-menu{
@@ -68,7 +66,7 @@ i-menu{
 .header {
   position: relative;
   background-color:  $grey;
-  height: 6rem;   
+  height: 5rem;   
 }
 
 .navigation ul{  
@@ -100,7 +98,8 @@ i-menu{
     width: 100px;
        position: absolute;
     left: 3%;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
+    padding-top: 1.3rem;
     font-size: 2rem;
     right: 1em;
     top: 0;
@@ -185,7 +184,7 @@ i-menu{
  .donate{ 
  font-size: 1.4rem;
  width: 8rem;    
- padding: 2.2rem 0 2.1rem 1.5rem;   
+ padding: 1.6rem 0 1.7rem 1.5rem;   
     
 }
     
@@ -195,7 +194,7 @@ i-menu{
 
     
 .navigation ul{
-        padding-top: 1rem;
+        padding-top: 0.4rem;
         padding-right: 8rem;
     
     li{    
@@ -207,7 +206,7 @@ i-menu{
         text-decoration: none;
         color: $white;
         font-size: 1.4rem;
-        height: 5rem;
+        height: 4.6rem;
     }
     
     a:hover{
@@ -218,9 +217,18 @@ i-menu{
 }
 
  
-@media only screen and (min-width:70em){
+@media only screen and (min-width:75em){
     
-    
+    .h1-logo{
+        span{
+            display: block;
+            font-size: 1.4rem;
+            position: absolute;
+            padding-top: 1.5rem;
+            padding-left: 5rem;
+        }
+        
+    }
 }
 
 
