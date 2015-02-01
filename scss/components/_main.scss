@@ -19,7 +19,8 @@ html {
 
 
 body{
-  font-family: sans-serif;
+  font-family: "quicksand",sans-serif;
+  color: $white;    
   @include zero;
   // Hides close button if there is no js
   &.noscript .close-btn,
@@ -30,30 +31,43 @@ body{
   }
 }
 
-h1{
- margin: 0;    
+.h1-logo{
+ margin: 0;
+ width: 60%;    
+ text-align: center;    
+}
+
+.h1-logo{
+  span{
+        @include hide-text;
+    }    
 }
 
 .logo{
    position: absolute;
-   width: 7rem; 
-   height: 100%;
-   top: -0.02rem;    
+   width: 4rem;
+   padding-top: 1rem;    
+}
+
+.donate{
+ background-color: $yellow;
+ color: $grey; 
+ font-size: 1.2rem;    
+ width: 6rem;    
+ position: absolute;
+ padding: 2.2rem 0 3rem 1rem;   
+ right: 0;
+ margin: 0;    
+}
+
+i-menu{
+ float: left;   
 }
 
 .header {
   position: relative;
   background-color:  $grey;
-  padding: 2rem;    
-}
-
-.toggle-btn{
-    float: left;
-    padding-top: 2rem;
-    position: absolute;
-    font-size: 2rem;
-    right: 1em;
-    top: 0;
+  height: 6rem;   
 }
 
 .navigation ul{  
@@ -79,6 +93,12 @@ h1{
  color: $white;
  height: 100px;
     width: 100px;
+       position: absolute;
+    left: 3%;
+    padding-top: 2rem;
+    font-size: 2rem;
+    right: 1em;
+    top: 0;
     span{
         @include hide-text;
     }   
