@@ -9,7 +9,7 @@ html {
 	-moz-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-	text-size-adjust: 100%;
+	text-size-adjust: 100%;   
 }
 
 
@@ -25,21 +25,38 @@ body{
   &.noscript .close-btn,
   &.noscript .toggle-btn{
     display: none;
+        padding: 0;
+    margin: 0;   
   }
 }
 
-header {
-  padding: 0 1em;
+h1{
+ margin: 0;    
+}
+
+.logo{
+   position: absolute;
+   width: 7rem; 
+   height: 100%;
+   top: -0.02rem;    
+}
+
+.header {
   position: relative;
+  background-color:  $grey;
+  padding: 2rem;    
 }
 
 .toggle-btn{
+    float: left;
+    padding-top: 2rem;
     position: absolute;
+    font-size: 2rem;
     right: 1em;
     top: 0;
 }
 
-.navigation ul{
+.navigation ul{  
     @include zero;
     li{
         list-style-type: none;
@@ -47,25 +64,21 @@ header {
         display: block;
         padding: .5em 1em;
         text-align: center;
-        border-bottom:  1px solid $light-grey;
+        border-bottom:  1px solid $grey;
         text-decoration: none;
 }
         
 &:firstchild a{
-    border-top: 1px solid $light-grey
+    border-top: 1px solid $grey
     }
   }
 }
 
 .toggle-btn,
 .close-btn{
- color: $text-color;
- height: 40px;
-    width: 40px;
-    i{
-     border: 1px solid $light-grey;
-     padding: .5em;    
-    }
+ color: $white;
+ height: 100px;
+    width: 100px;
     span{
         @include hide-text;
     }   
@@ -108,7 +121,8 @@ header {
     top: 0;
     bottom: 0;
     right: -100%;
-    min-height: 600px;  
+    min-height: 600px;
+    background-color: $grey;
 }
 
 @media only screen and (min-width: 60em){
