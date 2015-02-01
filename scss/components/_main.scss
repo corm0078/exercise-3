@@ -100,10 +100,10 @@ i-menu{
 
 .toggle-btn,
 .close-btn{
- color: $white;
- height: 100px;
+    color: $white;
+    height: 100px;
     width: 100px;
-       position: absolute;
+    position: absolute;
     left: 3%;
     padding-top: 1.5rem;
     padding-top: 1.3rem;
@@ -203,10 +203,10 @@ i-menu{
 .navigation ul{
         padding-top: 0.4rem;
         padding-right: 8rem;
+         float: right;
     
     li{    
         display: inline-block;
-        float: right;
     }
     
     a{
